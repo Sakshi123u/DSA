@@ -71,7 +71,7 @@ linkedlist::~linkedlist(){
 void linkedlist :: merge(node *p,node *q){
     node *third,*last=NULL;
     if(p->data < q->data){
-        third=last=first;
+        third=last=p;
         p=p->next;
         last->next=NULL;
     }
