@@ -71,11 +71,10 @@ void linkedlist :: insert(node *p,int index,int x){
         }
         t->data=x;
         t->next=p->next;
-        t->pre=p;
-        p->next=t;
         if(p->next){
         p->next->pre=t;
         }
+        t->pre=p;
         p->next=t;
     }
 }
